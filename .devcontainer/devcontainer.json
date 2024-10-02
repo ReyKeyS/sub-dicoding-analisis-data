@@ -6,7 +6,8 @@
     "codespaces": {
       "openFiles": [
         "README.md",
-        "dashboard/dashboard.py"
+        "dashboard/dashboard.py",
+        "dashboard/main_data.csv"
       ]
     },
     "vscode": {
