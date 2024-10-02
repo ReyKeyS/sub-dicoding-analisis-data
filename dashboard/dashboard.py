@@ -34,8 +34,11 @@ def plot_pm10_hourly(df, wilayah):
     plt.grid(True)
     st.pyplot(plt)
 
+# Upload file CSV
+uploaded_file = st.file_uploader("main_data.csv", type="csv")
+
 # Load data yang sudah dibersihkan
-df = pd.read_csv("main_data.csv")
+df = pd.read_csv(uploaded_file)
 df['datetime'] = pd.to_datetime(df[['year', 'month', 'day', 'hour']])
 
 # Judul untuk dashboard
