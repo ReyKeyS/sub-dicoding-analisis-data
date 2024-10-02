@@ -35,7 +35,7 @@ def plot_pm10_hourly(df, wilayah):
     st.pyplot(plt)
 
 # Load data yang sudah dibersihkan
-df = pd.read_csv("./main_data.csv")
+df = pd.read_csv("dashboard/main_data.csv")
 df['datetime'] = pd.to_datetime(df[['year', 'month', 'day', 'hour']])
 
 # Judul untuk dashboard
